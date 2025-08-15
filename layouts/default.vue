@@ -7,6 +7,5 @@ import Footer from "../components/layouts/footer.vue";
   <div>
     <Header />
     <nuxt />
-    <Footer />
   </div>
 </template>

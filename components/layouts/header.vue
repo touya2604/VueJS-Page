@@ -8,6 +8,7 @@
           <nuxt-link to="/about">About</nuxt-link>
           <nuxt-link to="/services">Services</nuxt-link>
           <nuxt-link to="/contact/lienhe">Contact</nuxt-link>
+          <nuxt-link to="/hoadon">Hóa Đơn</nuxt-link>
         </li>
       </ul>
     </nav>

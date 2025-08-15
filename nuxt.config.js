@@ -21,6 +21,30 @@ module.exports = {
         href: "https://fonts.googleapis.com/css?family=Montserrat:300,700",
       },
     ],
+    link: [
+      // Bootstrap 4 CSS
+      {
+        rel: 'stylesheet',
+        href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
+      }
+    ],
+    script: [
+      // jQuery (Bootstrap 4 cần)
+      {
+        src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js',
+        body: true
+      },
+      // Popper.js (Bootstrap 4 cần)
+      {
+        src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
+        body: true
+      },
+      // Bootstrap 4 JS
+      {
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js',
+        body: true
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -29,7 +53,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["@/assets/css/main.css"],
+  // css: ["@/assets/css/main.css"],
   /*
    ** Plugins to load before mounting the App
    */

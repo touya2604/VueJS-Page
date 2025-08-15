@@ -1,0 +1,312 @@
+/* Layout */
+.layout-site {
+  padding: 30px 0;
+}
+.layout-site.layout-with-sidebar {
+  padding: 10px 16px 0 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.layout-site.layout-with-sidebar .main-site {
+  width: calc(100% - 200px);
+  margin-left: 20px;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+      overflow-y: auto;
+}
+.top-main-site {
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+  height:100%;
+  overflow-y:auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.main-layout-site {
+  flex: 1;
+  background: #fff;
+    border-radius: 10px;
+}
+.flex-bottom-layout-site {
+  display: flex;
+  align-items: center;
+}
+.flex-breacumb .btn-add-new {
+  margin: 0;
+}
+.flex-bottom-layout-site .text-copyright {
+  color: rgba(18, 18, 18, 0.6);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.flex-right-bottom-site {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sidebar-site .wp-navs-main {
+  padding: 0;
+  padding-bottom: 5px;
+}
+.bg-sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 1);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.layout-sidebar-site {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.pt-header {
+  padding-top: 50px;
+}
+.box-sidebar-mobile {
+  display: none;
+}
+.layout-sidebar-site .form-search-work {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.sidebar-site {
+  width: 180px;
+  height: 100%;
+}
+
+.layout-sidebar-site .form-search-work input {
+  border: 1px solid #d9d9d9;
+  background: transparent;
+  border-radius: 5px;
+  height: 30px;
+}
+.wp-site-2025.compact-sidebar .sidebar-site {
+  width: 44px;
+}
+
+.wp-site-2025.compact-sidebar .topbar-fixed {
+  width: 100%;
+}
+
+.wp-site-2025.compact-sidebar .layout-site.layout-with-sidebar .main-site {
+  width: calc(100% - 64px);
+}
+
+.wp-site-2025.compact-sidebar .sidebar-site .wp-navs-main {
+  padding: 0;
+  padding-bottom: 5px;
+}
+.wp-site-2025.compact-sidebar
+  .layout-topbar-fixed
+  .lst-call-noti
+  .item-support-topbar {
+  margin-right: 15px;
+}
+.wp-site-2025.compact-sidebar
+  .layout-topbar-fixed
+  .lst-call-noti
+  .item-support-topbar:last-child {
+  margin: 0;
+}
+.wp-site-2025.compact-sidebar .sidebar-site .wp-navs-main .nav-parent {
+  padding: 10px 4px;
+  border-radius: 4px;
+}
+@media (min-width: 1200px) {
+  .container-w-1150 {
+    max-width: 1180px;
+  }
+  .container-w-1100 {
+    max-width: 1130px;
+  }
+}
+@media (min-width: 991px) {
+  .container.container-w-1000 {
+    max-width: 1030px;
+  }
+}
+@media (max-width: 1199px) {
+  .item-nav-group-child.back-sidebar {
+    display: none;
+  }
+  .layout-sidebar-site .form-search-work {
+    padding: 0 10px;
+    margin: 20px 0 0 0;
+  }
+  .layout-site {
+    padding: 20px 0;
+  }
+  .sidebar-site {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  .sidebar-site.open-sidebar {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar-site.open-sidebar .bg-sidebar {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  .layout-sidebar-site {
+    width: 300px;
+    background: #fff;
+    margin-left: auto;
+    z-index: 1;
+    transition: all 0.4s;
+    transform: translateX(300px);
+    position: relative;
+  }
+  .sidebar-site .wp-navs-main {
+    padding: 12px;
+  }
+  .nav-parent {
+    border-radius: 5px;
+  }
+  .sidebar-site.open-sidebar .layout-sidebar-site {
+    transform: translate(0);
+  }
+  .layout-site.layout-with-sidebar .main-site {
+    width: 100%;
+    margin-left: 0;
+    height:100%;
+  }
+  .bottom-layout-site {
+      padding: 12px;
+  }
+  .layout-site.layout-with-sidebar {
+    height: auto;
+    padding: 15px;
+  }
+  .box-sidebar-mobile {
+    background: #fff;
+    padding: 0 10px;
+    border-top: 1px solid rgba(217, 217, 217, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    position: sticky;
+    top: 50px;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .box-sidebar-mobile .name {
+    color: rgba(18, 18, 18, 1);
+    font-size: 18px;
+  }
+
+  .box-sidebar-mobile .menu-line .line {
+    background: rgba(18, 18, 18, 1);
+    width: 100%;
+  }
+
+  .box-sidebar-mobile .menu-line {
+    width: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+/* End Layout */
+
+/* Trang chủ login */
+.logo-topbar {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.wp-site-2025 .topbar-fixed {
+  width: 100%;
+}
+.mobile-topbar {
+  display: none;
+}
+.select-choose-name-company select {
+    width: 130px;
+    height: 20px;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-right: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select-choose-name-company {
+  display: flex;
+  align-items: center;
+}
+.select-choose-name-company .icon-select {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  .mobile-topbar {
+    display: block;
+    padding: 0 15px;
+    border-bottom: 1px solid #d4d9e1;
+  }
+  .wp-site-2025 .topbar-fixed .lst-call-noti {
+    margin-left: 10px;
+  }
+  .logo-topbar {
+    margin-right: 6px;
+  }
+  .select-choose-name-company {
+    width: 170px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .mobile-topbar .info-company {
+    padding: 3px 0;
+  }
+}
+@media (max-width: 575px) {
+}
+
+@media (max-width: 376px) {
+  .select-choose-name-company {
+    width: 150px;
+  }
+}
+@media (max-width: 326px) {
+  .select-choose-name-company {
+    width: 110px;
+  }
+}
